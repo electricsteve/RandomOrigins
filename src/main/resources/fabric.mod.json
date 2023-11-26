@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "random_origins",
+  "version": "${version}",
+  "name": "Random Origins",
+  "description": "An Origins mod addon that adds some random origins.",
+  "authors": [
+    "ElectricSteve"
+  ],
+  "contact": {
+    "repo": "https://github.com/electricsteve/RandomOrigins"
+  },
+  "license": "MIT",
+  "icon": "assets/random_origins/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "electricsteve.random_origins.RandomOriginsClient"
+    ],
+    "main": [
+      "electricsteve.random_origins.RandomOrigins"
+    ]
+  },
+  "mixins": [
+    "random_origins.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

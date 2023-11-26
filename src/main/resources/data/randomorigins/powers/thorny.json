@@ -1,0 +1,11 @@
+{
+    "type": "origins:attacker_action_when_hit",
+    "name": "Thorny",
+    "description": "Get thorns without any armor! The thorns also triggers every time.",
+    "entity_action": {
+      "type": "origins:damage",
+      "amount": 4,
+      "damage_type": "minecraft:thorns"
+    },
+    "cooldown": 1
+}

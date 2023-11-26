@@ -1,0 +1,11 @@
+{
+    "powers": [
+        "randomorigins:thorny",
+        "randomorigins:thunder_arrow"
+    ],
+    "icon": "minecraft:spectral_arrow",
+    "order": 4,
+    "impact": 1,
+    "name": "ElectricShock",
+    "description": "ElectricShock is an origin made for ElectricSteve."
+}
