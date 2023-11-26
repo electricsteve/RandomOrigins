@@ -1,14 +1,15 @@
 {
-    "type": "origins:active_self",
+    "type": "randomorigins:shoot_arrow_entity",
     "name": "Thunder Arrow",
     "description": "Fire an arrow that strikes lightning on impact.",
-    "entity_action": {
-        "type": "origins:execute_command",
-        "command": "function electricorigin:thunder_arrow"
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
     },
+    "velocity_multiplier": 5,
     "hud_render": {
         "sprite_location": "origins:textures/gui/resource_bar.png",
         "bar_index": 2
     },
-    "cooldown": 20
+    "cooldown": 500
 }

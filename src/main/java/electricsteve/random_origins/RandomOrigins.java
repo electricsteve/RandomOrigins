@@ -1,6 +1,7 @@
 package electricsteve.random_origins;
 
 import electricsteve.random_origins.Entities.ThunderArrowEntity;
+import electricsteve.random_origins.registry.ModPowers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -20,7 +21,7 @@ public class RandomOrigins implements ModInitializer {
     public static String VERSION = "";
     @Override
     public void onInitialize() {
-
+        ModPowers.register();
     }
 
     public static final EntityType<ThunderArrowEntity> THUNDER_ARROW = Registry.register(

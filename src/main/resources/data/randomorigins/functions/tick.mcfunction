@@ -1,3 +1,0 @@
-execute if entity @e[type=arrow,nbt={inGround:1b},tag=spectral_arrow,limit=1,sort=nearest] at @e[type=arrow,nbt={inGround:1b},tag=spectral_arrow,limit=1,sort=nearest] run summon minecraft:lightning_bolt ~ ~ ~
-execute if entity @e[type=arrow,nbt={inGround:1b},tag=spectral_arrow,limit=1,sort=nearest] at @e[type=arrow,nbt={inGround:1b},tag=spectral_arrow,limit=1,sort=nearest] run kill @e[type=arrow,nbt={inGround:1b},tag=spectral_arrow,limit=1,sort=nearest]
-execute if entity @e[type=!arrow,nbt={active_effects:[{id:"minecraft:unluck",amplifier:1b}]}] at @e[type=!arrow,nbt={active_effects:[{id:"minecraft:unluck",amplifier:1b}]}] run summon minecraft:lightning_bolt ~ ~ ~

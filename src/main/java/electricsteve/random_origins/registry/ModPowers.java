@@ -18,10 +18,9 @@ public class ModPowers {
                         .add("cooldown", SerializableDataTypes.INT)
                         .add("hud_render", ApoliDataTypes.HUD_RENDER)
                         .add("key", ApoliDataTypes.BACKWARDS_COMPATIBLE_KEY)
-                        .add("entity", SerializableDataTypes.ENTITY_TYPE)
                         .add("velocity_multiplier", SerializableDataTypes.INT),
                 (data) -> (type, player) -> {
-                    ShootArrowEntity shootArrowEntity = new ShootArrowEntity(type, player, data.getInt("cooldown"), (HudRender) data.get("hud_render"), data.get("entity"), data.getInt("velocity_multiplier"));
+                    ShootArrowEntity shootArrowEntity = new ShootArrowEntity(type, player, data.getInt("cooldown"), (HudRender) data.get("hud_render"), data.getInt("velocity_multiplier"));
                     shootArrowEntity.setKey((Active.Key) data.get("key"));
                     return shootArrowEntity;
                 }));
