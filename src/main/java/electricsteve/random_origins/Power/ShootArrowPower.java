@@ -1,24 +1,16 @@
-package electricsteve.random_origins.power;
+package electricsteve.random_origins.Power;
 
 import electricsteve.random_origins.Entities.ThunderArrowEntity;
 import electricsteve.random_origins.RandomOrigins;
 import io.github.apace100.apoli.power.ActiveCooldownPower;
 import io.github.apace100.apoli.power.PowerType;
 import io.github.apace100.apoli.util.HudRender;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.ArrowEntity;
-import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.util.math.Vec3d;
 
-import java.util.function.Consumer;
-
-public class ShootArrowEntity extends ActiveCooldownPower {
+public class ShootArrowPower extends ActiveCooldownPower {
 
     int velocityMultiplier;
-    public ShootArrowEntity(PowerType<?> type, LivingEntity entity, int cooldownDuration, HudRender hudRender, int velocityMultiplier) {
+    public ShootArrowPower(PowerType<?> type, LivingEntity entity, int cooldownDuration, HudRender hudRender, int velocityMultiplier) {
         super(type, entity, cooldownDuration, hudRender, null);
         this.velocityMultiplier = velocityMultiplier;
     }

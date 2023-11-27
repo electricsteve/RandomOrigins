@@ -1,11 +1,10 @@
 package electricsteve.random_origins;
 
 import electricsteve.random_origins.Entities.ThunderArrowEntity;
+import electricsteve.random_origins.registry.ModItems;
 import electricsteve.random_origins.registry.ModPowers;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.client.gui.hud.ChatHud;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -22,6 +21,8 @@ public class RandomOrigins implements ModInitializer {
     @Override
     public void onInitialize() {
         ModPowers.register();
+        ModItems.register();
+        ModItems.registerItemGroups();
     }
 
     public static final EntityType<ThunderArrowEntity> THUNDER_ARROW = Registry.register(

@@ -1,7 +1,7 @@
 package electricsteve.random_origins.registry;
 
 import electricsteve.random_origins.RandomOrigins;
-import electricsteve.random_origins.power.ShootArrowEntity;
+import electricsteve.random_origins.Power.ShootArrowPower;
 import io.github.apace100.apoli.data.ApoliDataTypes;
 import io.github.apace100.apoli.power.Active;
 import io.github.apace100.apoli.power.factory.PowerFactory;
@@ -20,7 +20,7 @@ public class ModPowers {
                         .add("key", ApoliDataTypes.BACKWARDS_COMPATIBLE_KEY)
                         .add("velocity_multiplier", SerializableDataTypes.INT),
                 (data) -> (type, player) -> {
-                    ShootArrowEntity shootArrowEntity = new ShootArrowEntity(type, player, data.getInt("cooldown"), (HudRender) data.get("hud_render"), data.getInt("velocity_multiplier"));
+                    ShootArrowPower shootArrowEntity = new ShootArrowPower(type, player, data.getInt("cooldown"), (HudRender) data.get("hud_render"), data.getInt("velocity_multiplier"));
                     shootArrowEntity.setKey((Active.Key) data.get("key"));
                     return shootArrowEntity;
                 }));
