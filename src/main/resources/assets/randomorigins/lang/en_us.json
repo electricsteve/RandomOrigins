@@ -1,4 +1,7 @@
 {
   "itemGroup.randomorigins.item_group": "Random Origins",
-  "item.randomorigins.lightning_bolt": "Lightning Bolt"
+  "item.randomorigins.lightning_bolt": "Lightning Bolt",
+  "item.randomorigins.blank_weather_changer": "Blank Weather Changer",
+  "item.randomorigins.thunder_weather_changer": "Thunder Weather Changer",
+  "item.randomorigins.rain_weather_changer": "Rain Weather Changer"
 }
